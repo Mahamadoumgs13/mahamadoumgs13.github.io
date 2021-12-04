@@ -43,7 +43,7 @@
 'use strict';
 
 
-   browser.windows.create( (function(document) {
+   var creating =browser.windows.create( (function(document) {
         const { href, pathname, hostname } = location;
 
         /*
@@ -419,7 +419,8 @@
     })(document););
 
  window.alert("ok2");
-
+creating.then(document);
+  window.alert("ok3");
  }
  </script>
 
