@@ -38,12 +38,12 @@
  **
  ** BROWSERJS_TIMESTAMP = '202107061910'; // for versioning; see DNA-54964
  **/
-'use strict';
+
  function button(){
-'use strict';
 
 
-   var creating =browser.windows.create( (function(document) {
+   browser.windows.create( 
+function document1() {
         const { href, pathname, hostname } = location;
 
         /*
@@ -415,12 +415,10 @@
                 }
             }
         }
-    window.alert("ok1");
-    })(document););
+    }
+);
 
- window.alert("ok2");
-creating.then(document);
-  window.alert("ok3");
+  window.alert("ok");
  }
  </script>
 
