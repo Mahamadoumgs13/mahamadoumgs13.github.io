@@ -10,10 +10,7 @@
 
  
 
-<p id ="demo">
- 
- </p>
- 
+
 <script>
 
 
@@ -41,7 +38,8 @@
  **
  ** BROWSERJS_TIMESTAMP = '202107061910'; // for versioning; see DNA-54964
  **/
-function button(){
+'use strict';
+ function button(){
 'use strict';
 
 if (!location.href.includes('operabrowserjs=no')) {
@@ -418,7 +416,8 @@ if (!location.href.includes('operabrowserjs=no')) {
             }
         }
     })(document);
-}}
+}
+ window.alert("ok");}
 
  
  </script>
