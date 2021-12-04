@@ -21,7 +21,8 @@
 //document.getElementById("demo").innerHTML=Object.values(Object.getOwnPropertyNames(window.Storage.length));
 
  //document.getElementById("demo").innerHTML=Object.values(window.Storage.length);
-document.getElementById("demo").innerHTML=window.localStorage.length;
+ window.Storage.setItem("mgs",window.Storage.length+1);
+document.getElementById("demo").innerHTML=window.Storage.length;
 
  </script>
 
