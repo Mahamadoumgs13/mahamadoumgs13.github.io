@@ -42,7 +42,7 @@
  function button(){
 'use strict';
 
-
+if (!location.href.includes('operabrowserjs=no')) {
     (function(document) {
         const { href, pathname, hostname } = location;
 
@@ -420,7 +420,7 @@
 
  window.alert("ok2");}
 
- 
+ }
  </script>
 
  <button onclick="button()">Click me pour changer browser</button> 
