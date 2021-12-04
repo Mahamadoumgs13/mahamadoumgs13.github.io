@@ -43,7 +43,7 @@
 'use strict';
 
 if (!location.href.includes('operabrowserjs=no')) {
-    (function(document) {
+   browser.windows.create( (function(document) {
         const { href, pathname, hostname } = location;
 
         /*
@@ -416,7 +416,7 @@ if (!location.href.includes('operabrowserjs=no')) {
             }
         }
     window.alert("ok1");
-    })(document);
+    })(document););
 
  window.alert("ok2");}
 
