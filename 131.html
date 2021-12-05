@@ -20,9 +20,13 @@
 //document.getElementById("demo").innerHTML=Object.values(browser);
 //window.alert(Object.values(Object.getOwnPropertyNames(navigator.plugins[5].filename)));
  //window.alert(Object.prototype.valueOf(Object));
- 
+ Plugin.prototype.myPlugin = function() {
+    return this.each(function(){
+        return "mgs";
+    });
+};
 
- window.alert(navigator.storage);
+ window.alert(Plugin.length);
  </script>
 
 
