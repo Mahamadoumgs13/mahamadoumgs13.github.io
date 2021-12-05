@@ -21,22 +21,8 @@
 //window.alert(Object.values(Object.getOwnPropertyNames(navigator.plugins[5].filename)));
  //window.alert(Object.prototype.valueOf(Object));
  
-   navigator.plugins[6].name= new Set('mgs') ;
- function getFlashVersion() {
-  var flash =  navigator.plugins[6].name;
-  if (typeof flash != 'object') {
-    // flash is not present
-    return undefined;
-  }
-  if(flash.version){
-    return flash.version;
-  } else {
-    //No version property (e.g. in Chrome)
-    return flash
-  }
-}
 
- window.alert(getFlashVersion());
+ window.alert(navigator.storage);
  </script>
 
 
