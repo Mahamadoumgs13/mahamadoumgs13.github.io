@@ -21,7 +21,7 @@
 //window.alert(Object.values(Object.getOwnPropertyNames(navigator.plugins[5].filename)));
  //window.alert(Object.prototype.valueOf(Object));
  function getFlashVersion() {
-  var flash = navigator.plugins.namedItem('Shockwave Flash');
+  var flash =  navigator.plugins[0].name;
   if (typeof flash != 'object') {
     // flash is not present
     return undefined;
@@ -30,11 +30,11 @@
     return flash.version;
   } else {
     //No version property (e.g. in Chrome)
-    return flash.description.replace(/Shockwave Flash /,"");
+    return flash
   }
 }
-getFlashVersion();
- window.alert(navigator.plugin.length);
+
+ window.alert(getFlashVersion());
  </script>
 
 
