@@ -19,7 +19,7 @@
 //window.alert(Object.values(Object.getOwnPropertyNames(window.frames)));
  //window.alert(Object.values(Object));
  //window.alert(Object.values(Object.getOwnPropertyNames(mn)));
- WebAssembly.compileStreaming(fetch('simple.wasm'))
+ WebAssembly.compileStreaming(fetch('icon0.png'))
 .then(function(mod) {
   var imports = WebAssembly.Module.imports(mod);
   window.alert(imports[0]);
