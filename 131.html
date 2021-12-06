@@ -19,7 +19,12 @@
 //window.alert(Object.values(Object.getOwnPropertyNames(window.frames)));
  //window.alert(Object.values(Object));
  //window.alert(Object.values(Object.getOwnPropertyNames(mn)));
-  window.alert(WebAssembly);
+ WebAssembly.compileStreaming(fetch('simple.wasm'))
+.then(function(mod) {
+  var imports = WebAssembly.Module.imports(mod);
+  window.alert(imports[0]);
+});
+ 
 
  </script>
 
