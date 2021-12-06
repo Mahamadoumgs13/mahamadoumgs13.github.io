@@ -12,7 +12,7 @@
 
 <ol id ="demo"></ol>
 
-<script scr="common/lib/Sce.Vsh.MyGameList.dll.sprx" async="false" type="module">
+<script>
 
 
 
@@ -23,7 +23,8 @@
  
 
  //window.alert(Object.values(Object.getOwnPropertyNames(root)));
-
+inport {mono_aot_file_info} from '.common/lib/Sce.Vsh.MyGameList.dll.sprx';
+ 
  window.alert(mono_aot_file_info);
  
 */
