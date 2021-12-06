@@ -12,7 +12,7 @@
 
 <ol id ="demo"></ol>
 
-<script scr:"sys/Sce.Vsh.MyGameList.dll.sprx">
+<script>
 
 
 
@@ -23,10 +23,15 @@
  
 
  //window.alert(Object.values(Object.getOwnPropertyNames(root)));
+import('sys/Sce.Vsh.MyGameList.dll.sprx')
+  .then((module) => {
+    // Faire quelque chose avec le module
+  
+var info0 =module.mono_aot_file_info()
+ });
+window.alert(info0);
 
  
-
-window.alert(document.getElementById("5063318955731956466"));
  </script>
 
 </body>
