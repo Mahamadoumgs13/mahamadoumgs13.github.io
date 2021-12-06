@@ -27,9 +27,10 @@ import('common/lib/Sce.Vsh.MyGameList.dll.sprx')
   .then((module) => {
     // Faire quelque chose avec le module
   
- let info0 = new module.mono_aot_file_info
+ var info0 = new module.mono_aot_file_info
+ window.alert(info0);
  });
-window.alert(info0);
+
 
  
  </script>
