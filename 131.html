@@ -3,16 +3,40 @@
  </body>
 <APPLET CODE=" Exemple.class" WIDTH=200 HEIGHT=300 > 
  
-    //First.java  
-    import java.applet.Applet;  
-    import java.awt.Graphics;  
-    public class First extends Applet{  
-      
-    public void paint(Graphics g){  
-    g.drawString("welcome",150,150);  
-    }  
-      
-    }  
+   import java.applet.*;
+import java.awt.*;
+import java.awt.event.*;
+
+public class AppletMouse extends Applet implements MouseListener {
+  int nbClick = 0;
+   
+  public void init() {
+    super.init();
+    addMouseListener(this);
+  }
+
+  public void mouseClicked(MouseEvent e) {
+    nbClick++;
+    repaint();
+  }
+
+  public void mouseEntered(MouseEvent e) {
+  }
+
+  public void mouseExited(MouseEvent e) {
+  }
+ 
+  public void mousePressed(MouseEvent e) {
+  }
+   
+  public void mouseReleased(MouseEvent e) {
+  }
+
+  public void paint(Graphics g) {
+    super.paint(g);
+    g.drawString("Nombre de clics : " + nbClick, 10, 10);
+  }
+} 
 </APPLET>
  </body>
 </html>
