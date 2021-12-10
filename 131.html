@@ -1,4 +1,12 @@
 <applet code="game.class" align="left" archive="game.zip" height="250" width="350">
   <param name="difficulte" value="facile">
   <b>Vous avez besoin de Java pour activer cela.</b>
+  public void paint(Graphics g) {
+  super.paint(g);
+  Dimension dim = getSize();
+  int applargeur = dim.width;
+  int apphauteur = dim.height;
+  g.drawString("width = "+applargeur,10,15);
+  g.drawString("height = "+apphauteur,10,30);
+}
 </applet>
