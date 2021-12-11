@@ -8,13 +8,19 @@
  </head>
 <body>
  <script>
- alert(Object.values(Object.getOwnPropertyNames(EventTarget.prototype)));
+ alert(Object.values(Object.getOwnPropertyNames(window.Navigator)));
 
 
 
  </script>
   <script>
- alert(Object.values(Object.getOwnPropertyNames(Window.prototype)));
+ alert(Object.values(Object.getOwnPropertyNames(Window.Navigator.prototype)));
+
+
+
+ </script>
+  <script>
+ alert(Object.keys(window.Navigator));
 
 
 
