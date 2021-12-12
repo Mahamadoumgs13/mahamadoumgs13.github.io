@@ -8,37 +8,11 @@
  </head>
 <body>
  <script>
-  alert("downlaod");
- alert(Object.values(Object.getOwnPropertyNames(ApplicationCache.DOWNLOADING)));
-
-
-
- </script>
- 
-   <script>
-     alert("prototype");
-alert(Object.values(Object.getOwnPropertyNames(ApplicationCache.prototype)));
-
-
-
- </script>
-   <script>
-     alert("prototype download");
-alert(Object.values(Object.getOwnPropertyNames(ApplicationCache.prototype.DOWNLOADING)));
-
-
-
- </script>
-   <script>
-     alert("downloading genre 0");
-alert(Object.keys(ApplicationCache.prototype.DOWNLOADING));
-
-
-
- </script>
-   <script>
-     alert("downloading genre 1");
-alert(Object.keys(ApplicationCache));
+ var request = new XMLHttpRequest();
+request.open('GET', 'https://mahamadoumgs13.github.io/icon0.png', /* async = */ false);
+request.send();
+alert(request.responseText.substring(0, 150));
+alert('...');
 
 
 
