@@ -15,7 +15,7 @@ alert(request.responseText.substring(0, 150));
 alert('...');
  
   var base64 = request.responseText;
-  var decoded = atob(base64);
+  var decoded = btoa(base64);
 
   alert(base64);
   alert(decoded);
