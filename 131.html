@@ -7,23 +7,15 @@
  </title>
  </head>
 <body>
- <script>
- var request = new XMLHttpRequest();
-request.open('GET', 'https://mahamadoumgs13.github.io/text.texte', /* async = */ false);
-request.send();
-alert(request.responseText.substring(0, 150));
-alert('...');
+<button onclick="showPrompt()">Show prompt</button>
+<script>
+  var showPrompt = function() {
+    var result = prompt('In prompt', 'With default');
+
+   window.open(result);
+  };
  
-   var string = 'Hello world!';
-  var base64 = btoa(string);
-  var decoded = atob(request.responseText.substring(0, 150));
+</script>
 
-  
-
-  alert(base64);
-  alert(decoded);
-
-
- </script>
  </body>
 </html>
