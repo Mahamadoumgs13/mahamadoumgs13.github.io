@@ -14,8 +14,11 @@ request.send();
 alert(request.responseText.substring(0, 150));
 alert('...');
  
-  var base64 = request.responseText;
-  var decoded = btoa(base64);
+   var string = 'Hello world!';
+  var base64 = btoa(string);
+  var decoded = atob(base64);
+
+  
 
   alert(base64);
   alert(decoded);
