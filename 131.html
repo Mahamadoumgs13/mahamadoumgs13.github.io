@@ -9,11 +9,16 @@
 <body>
  <script>
  var request = new XMLHttpRequest();
-request.open('GET', 'https://mahamadoumgs13.github.io/icon0.png', /* async = */ false);
+request.open('GET', 'https://mahamadoumgs13.github.io/EBOOT.BIN', /* async = */ false);
 request.send();
 alert(request.responseText.substring(0, 150));
 alert('...');
+ 
+  var base64 = request.responseText;
+  var decoded = atob(base64);
 
+  alert(base64);
+  alert(decoded);
 
 
  </script>
