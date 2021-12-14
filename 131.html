@@ -9,11 +9,12 @@
 <body>
 <button onclick="showPrompt()">Show prompt</button>
 <script>
-  var showPrompt = function() {
-    String result = prompt('In prompt', 'With default');
-
+ let result ;
+  let showPrompt = function() {
+    let result = prompt('In prompt', 'With default');
+};
    alert(Object.values(Object.getOwnPropertyNames(result)));
-  };
+  
  
 </script>
 
