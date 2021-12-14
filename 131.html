@@ -7,14 +7,17 @@
  </title>
  </head>
 <body>
-<button onclick="showPrompt()">Show prompt</button>
+<button onclick="showPrompt1()">Show prompt</button>
 <script>
- let result ;
-  let showPrompt = function() {
-    let result = prompt('In prompt', 'With default');
-};
-   alert(Object.values(Object.getOwnPropertyNames(result)));
-  
+ 
+  var showPrompt1 = function() {
+   var function in1(){
+   var result = prompt('In prompt', 'With default');
+   return result;
+   };
+
+   alert(Object.values(Object.getOwnPropertyNames(in1())));
+  }
  
 </script>
 
