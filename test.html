@@ -8,10 +8,17 @@
  </head>
 <body>
 
+
+ <input type='file' onchange='openFile(event)'>
 <script>
-  
-  alert(Object.values(Object.getOwnPropertyNames(HTMLInputElement.prototype)));
-  
+  var openFile = function(event) {
+    var input = event.target;
+
+    var file = input.files[0];
+    alert(file.lastModifiedDate);
+  };
+</script>
+
 </script>
   </body>
   </html>
