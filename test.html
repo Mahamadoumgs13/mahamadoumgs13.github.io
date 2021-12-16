@@ -9,14 +9,11 @@
 <body>
 
 
- <input type='file' onchange='openFile(event)'>
-<script>
-  var openFile = function(event) {
-    var input = event.target;
 
-    var file = input.files[0];
-    alert(file.lastModifiedDate);
-  };
+<script>
+ 
+    alert(HTMLInputElement.files);
+  
 </script>
 
 
