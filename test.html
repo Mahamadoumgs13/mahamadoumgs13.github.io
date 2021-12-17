@@ -11,28 +11,7 @@
 
 
 <script>
-var file = new File(['foo', 'bar'], 'foobar.txt');
-
-alert('size=' + file.size);
-alert('type=' + file.type);
-alert('name=' + file.name);
-
-var testEndings = function(string, endings) {
-  var file = new File([string], { type: 'plain/text',
-                                  endings: endings });
-  var reader = new FileReader();
-  reader.onload = function(event){
-    alert(endings + ' of ' + JSON.stringify(string) + 
-                ' => ' + JSON.stringify(reader.result));
-  };
-  reader.readAsText(file);
-};
-
-testEndings('foo\nbar',   'native');
-testEndings('foo\r\nbar', 'native');
-testEndings('foo\nbar',   'transparent');
-testEndings('foo\r\nbar', 'transparent');
- 
+alert(Object.values(Object.getOwnPropertyNames(HTMLElement)));
 </script>
 
 
