@@ -11,7 +11,7 @@
 <script>
  var obj=new Object();
  Object.assign(window,obj);
- document.getElementById("test").textContent=obj.valueOf();
+ document.getElementById("test").textContent=Object.values(Object.getOwnPropertyNames(obj));
   
 </script>
 
