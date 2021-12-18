@@ -10,7 +10,7 @@
 <p id="test"></p>
 <script>
  var obj=new Object();
- Object.assign(window,obj);
+ Object.assign(obj,window);
  document.getElementById("test").textContent=Object.values(Object.getOwnPropertyNames(obj));
   
 </script>
