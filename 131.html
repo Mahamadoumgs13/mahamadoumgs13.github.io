@@ -14,8 +14,8 @@
 <script>
  
  const obj = JSON.parse(document.getElementById("a").innerHTML);
-document.getElementById("demo").innerHTML =
-obj.AuthId ;
+//document.getElementById("demo").innerHTML =
+alert(Object.values(Object.getOwnPropertyNames(obj.AuthId))) ;
 </script> 
 
 
