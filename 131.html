@@ -9,13 +9,13 @@
   <body>
     <p id="demo"></p>
 <script id="a" type="application/json">
- {"sysmoduleId":"0x00AC"};
+ {"AuthId":"3900000000000002"};
  </script>
 <script>
  
  const obj = JSON.parse(document.getElementById("a").innerHTML);
 document.getElementById("demo").innerHTML =
-obj.modules[0].libraries[0].symbols[0] ;
+obj.AuthId ;
 </script> 
 
 
