@@ -7,12 +7,11 @@
  </head>
   
   <body>
-    <p id="demo"></p>
+    <p id="test"></p>
 
 <script>
- int b= sceSysmoduleIsLoaded(0x0000);
- 
-alert(b) ;
+ document.getElementById("test").textContent=Object.values(Object.getOwnPropertyNames(parent));
+
 </script> 
 
 
