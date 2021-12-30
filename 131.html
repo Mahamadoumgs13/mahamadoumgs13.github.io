@@ -15,7 +15,7 @@
  
 
 
-document.getElementById("test").textContent=Object.values(navigator.mediaDevices.getUserMedia({video: true}));
+document.getElementById("test").textContent=Object.values(Object.getOwnPropertyNames(navigator.mediaDevices));
  
 </script>
 </body>
