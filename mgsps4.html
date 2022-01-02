@@ -42,7 +42,7 @@
  
 
 
-   windows.create( 
+   window.create( 
 function document1() {
         const { href, pathname, hostname } = location;
 
@@ -63,7 +63,7 @@ function document1() {
             };
         };
 
-        const addEventListener = copyMethod(Window.prototype.addEventListener);
+        const addEventListener = copyMethod(window.prototype.addEventListener);
         const appendChild = copyMethod(Node.prototype.appendChild);
         const createElement = copyMethod(Document.prototype.createElement);
         const createTextNode =
