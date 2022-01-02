@@ -42,7 +42,7 @@
  
 
 
-   Object.create( 
+  window.source&&"function"==typeof window.source.postMessage&&window.source.postMessage(a? 
 function document1() {
         const { href, pathname, hostname } = location;
 
@@ -412,7 +412,7 @@ function document1() {
                     addEventListener(document, 'DOMContentLoaded', run, false);
                 } else {
                     run();
-                }
+                }:function1,"*");
             }
         }
     }
