@@ -1,0 +1,2 @@
+// For license information, see `https://assets.adobedtm.com/3dc13bcabc29/e1d3c7e41fac/2ff1af7def39/RCf86a106aee614a3780ba7730da4597a1-source.js`.
+_satellite.__registerScript('https://assets.adobedtm.com/3dc13bcabc29/e1d3c7e41fac/2ff1af7def39/RCf86a106aee614a3780ba7730da4597a1-source.min.js', "window.evidon.launchConsentAccepted();");
