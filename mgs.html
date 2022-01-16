@@ -1,4 +1,3 @@
-
 <html><head>
 <meta charset="utf-8">
 <title>TEST MGS</title>
@@ -14,7 +13,7 @@ function a(){
 document.getElementById("test").textContent=Object.keys(window);
 };
  function z(){
-document.getElementById("test").textContent=Object.values(window);
+document.getElementById("test").textContent=Object.values(Object.getOwnPropertyNames(window));
 };
 </script> 
    <button name="button0" onclick="a()">keys</button>
