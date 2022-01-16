@@ -10,19 +10,19 @@
  
 <script>
 function a(){
-document.getElementById("test").textContent=Object.keys(openDatabase);
+document.getElementById("test").textContent=Object.keys(openDatabase());
 };
  function z(){
-document.getElementById("test").textContent=Object.values(Object.getOwnPropertyNames(openDatabase));
+document.getElementById("test").textContent=Object.values(Object.getOwnPropertyNames(openDatabase()));
 };
   function e(){
-document.getElementById("test").textContent=Object.getOwnPropertyNames(openDatabase);
+document.getElementById("test").textContent=Object.getOwnPropertyNames(openDatabase());
 };
  function r(){
-document.getElementById("test").textContent=Object.values(openDatabase);
+document.getElementById("test").textContent=Object.values(openDatabase());
 };
  function t(){
-document.getElementById("test").textContent=openDatabase;
+document.getElementById("test").textContent=openDatabase();
 };
 </script> 
    <button name="button0" onclick="a()">keys</button>
