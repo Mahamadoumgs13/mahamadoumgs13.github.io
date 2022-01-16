@@ -10,13 +10,25 @@
  
 <script>
 function a(){
-document.getElementById("test").textContent=Object.keys(window);
+document.getElementById("test").textContent=Object.keys(openDatabase);
 };
  function z(){
-document.getElementById("test").textContent=Object.values(Object.getOwnPropertyNames(window));
+document.getElementById("test").textContent=Object.values(Object.getOwnPropertyNames(openDatabase));
+};
+  function e(){
+document.getElementById("test").textContent=Object.getOwnPropertyNames(openDatabase);
+};
+ function r(){
+document.getElementById("test").textContent=Object.values(openDatabase);
+};
+ function t(){
+document.getElementById("test").textContent=Object.values(openDatabase);
 };
 </script> 
    <button name="button0" onclick="a()">keys</button>
    <button name="button1" onclick="z()">values</button>
+   <button name="button2" onclick="e()">property</button>
+   <button name="button2" onclick="r()">value_simple</button>
+   <button name="button2" onclick="t()">object_genre</button>
 </body>
 </html>
