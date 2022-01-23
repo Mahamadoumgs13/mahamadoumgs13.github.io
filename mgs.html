@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 <html><head>
 <meta charset="utf-8">
-<title>TEST MGS</title>
+<title>TEST REQUEST</title>
  </head>
   
   <body>
+   <h2 id="test12"></h2>
    <h2 id="test"></h2>
+ <h2 id="test1"></h2>
+<h2 id="test2"></h2>
+<h2 id="test3"></h2>
+<h2 id="test4"></h2>
+<h2 id="test5"></h2>
+<h2 id="test6"></h2>
+<h2 id="test7"></h2>
+<h2 id="test8"></h2>
+<h2 id="test9"></h2>
+<h2 id="test10"></h2>
+<h2 id="test11"></h2>
  <script>
-   document.getElementById("test").textContent=Object.getOwnPropertyNames(window);
-console.log(window);
+
+var url = 'https://web.np.playstation.com/api/graphql/v1/op'; 
+
+
+  var xhr = new XMLHttpRequest();
+
+  
+      console.log(xhr.response); // Par défault une DOMString
+ 
+  xhr.open('GET', url, true);
+document.getElementById("test12").textContent=xhr.open('GET', url, true);
+ // xhr.send({"operationName":"initiateDownload","variables":{"scheduleRequests":{"downloadSchedules":[{"duid":"myself","entitlementId":"IP9100-CUSA00572_00-SFRELE0000000100","platform":"PS4"}]}},"extensions":{"persistedQuery":{"version":1,"sha256Hash":"cddb5a81da705dadf59a9ea0d791fe81d7c9631ad6a34b1a8b592d61412abb39"}}});
+document.getElementById("test").textContent=xhr.mozAnon;
+ document.getElementById("test1").textContent=xhr.mozSystem;
+document.getElementById("test2").textContent=xhr.mozBackgroundRequest;
+document.getElementById("test3").textContent=xhr.mozResponseArrayBuffer;
+document.getElementById("test4").textContent=xhr.readyState;
+document.getElementById("test5").textContent=xhr.response;
+document.getElementById("test6").textContent=xhr.responseText;
+document.getElementById("test7").textContent=xhr.responseType;
+document.getElementById("test8").textContent=xhr.responseURL;
+document.getElementById("test9").textContent=xhr.responseXML;
+document.getElementById("test10").textContent=xhr.status;
+document.getElementById("test11").textContent=xhr.statusText;
    </script>  
  
 </body>
