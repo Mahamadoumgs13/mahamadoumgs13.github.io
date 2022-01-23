@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<changeinfo>
+  <changes app_ver="01.01">
+    <![CDATA[
+      Fixed environment detection
+      Fixed quickjoin edge-case failures
+      Quickjoining games will now create a game if no games were found
+      Fixed game invite functionality
+    ]]>
+  </changes>
+</changeinfo>
+
+
