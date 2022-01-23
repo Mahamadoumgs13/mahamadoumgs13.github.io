@@ -31,18 +31,18 @@ var url = 'https://web.np.playstation.com/api/graphql/v1/op';
   xhr.open('GET', url, true);
 document.getElementById("test12").textContent=xhr.open('GET', url, true);
  // xhr.send({"operationName":"initiateDownload","variables":{"scheduleRequests":{"downloadSchedules":[{"duid":"myself","entitlementId":"IP9100-CUSA00572_00-SFRELE0000000100","platform":"PS4"}]}},"extensions":{"persistedQuery":{"version":1,"sha256Hash":"cddb5a81da705dadf59a9ea0d791fe81d7c9631ad6a34b1a8b592d61412abb39"}}});
-document.getElementById("test").textContent=xhr.mozAnon;
- document.getElementById("test1").textContent=xhr.mozSystem;
-document.getElementById("test2").textContent=xhr.mozBackgroundRequest;
-document.getElementById("test3").textContent=xhr.mozResponseArrayBuffer;
-document.getElementById("test4").textContent=xhr.readyState;
-document.getElementById("test5").textContent=xhr.response;
-document.getElementById("test6").textContent=xhr.responseText;
-document.getElementById("test7").textContent=xhr.responseType;
-document.getElementById("test8").textContent=xhr.responseURL;
-document.getElementById("test9").textContent=xhr.responseXML;
-document.getElementById("test10").textContent=xhr.status;
-document.getElementById("test11").textContent=xhr.statusText;
+document.getElementById("test").textContent="mozAnon="+xhr.mozAnon;
+ document.getElementById("test1").textContent="mozSystem="+xhr.mozSystem;
+document.getElementById("test2").textContent="mozBackgroundRequest="+xhr.mozBackgroundRequest;
+document.getElementById("test3").textContent="mozResponseArrayBuffer="+xhr.mozResponseArrayBuffer;
+document.getElementById("test4").textContent="readyState="+xhr.readyState;
+document.getElementById("test5").textContent="response="+xhr.response;
+document.getElementById("test6").textContent="responseText="+xhr.responseText;
+document.getElementById("test7").textContent="responseType="+xhr.responseType;
+document.getElementById("test8").textContent="responseURL="+xhr.responseURL;
+document.getElementById("test9").textContent="responseXML="+xhr.responseXML;
+document.getElementById("test10").textContent="status="+xhr.status;
+document.getElementById("test11").textContent="statusText="+xhr.statusText;
    </script>  
  
 </body>
