@@ -29,7 +29,7 @@ var url = 'https://web.np.playstation.com/api/graphql/v1/op';
       console.log(xhr.response); // Par défault une DOMString
  
   xhr.open('GET', url, true);
-document.getElementById("test12").textContent=xhr.open('GET', url, true);
+document.getElementById("test12").textContent="open="+xhr.open('GET', url, true);
  // xhr.send({"operationName":"initiateDownload","variables":{"scheduleRequests":{"downloadSchedules":[{"duid":"myself","entitlementId":"IP9100-CUSA00572_00-SFRELE0000000100","platform":"PS4"}]}},"extensions":{"persistedQuery":{"version":1,"sha256Hash":"cddb5a81da705dadf59a9ea0d791fe81d7c9631ad6a34b1a8b592d61412abb39"}}});
 document.getElementById("test").textContent="mozAnon="+xhr.mozAnon;
  document.getElementById("test1").textContent="mozSystem="+xhr.mozSystem;
