@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html><head>
 <meta charset="utf-8">
-<title>TEST REQUEST</title>
+<title>TEST FETCH</title>
  </head>
   
   <body>
@@ -21,12 +21,13 @@
 <h2 id="test13"></h2>
  <script>
 
-var url = 'https://web.np.playstation.com/api/graphql/v1/op'; 
+//var url = 'https://web.np.playstation.com/api/graphql/v1/op'; 
+var url = 'https://image.api.playstation.com/gs2-sec/appkgo/prod/CUSA11608_00/4/i_792a77798272879836aff65dd0591c5a8ad85b2c0bdb007bfbc4f2073d3ab97e/i/icon0_01.png';
 
-
-  var xhr = new Request(url,{
-    credentials: "include",
-    headers: {
+  var xhr = new Response;
+ fetch(url,{
+    "credentials": "include",
+    "headers": {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:96.0) Gecko/20100101 Firefox/96.0",
         "Accept": "application/json",
         "Accept-Language": "fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3",
@@ -38,9 +39,10 @@ var url = 'https://web.np.playstation.com/api/graphql/v1/op';
         "Sec-Fetch-Mode": "cors",
         "Sec-Fetch-Site": "same-site"
     },
-    referrer:"client",
-    method: "GET",
-    mode: "cors"
+    "referrer":"",
+
+    "method": "GET",
+    "mode": "cors"
 });
 
   
@@ -49,20 +51,21 @@ var url = 'https://web.np.playstation.com/api/graphql/v1/op';
   
 document.getElementById("test12").textContent="open="+xhr;
  // xhr.send({"operationName":"initiateDownload","variables":{"scheduleRequests":{"downloadSchedules":[{"duid":"myself","entitlementId":"IP9100-CUSA00572_00-SFRELE0000000100","platform":"PS4"}]}},"extensions":{"persistedQuery":{"version":1,"sha256Hash":"cddb5a81da705dadf59a9ea0d791fe81d7c9631ad6a34b1a8b592d61412abb39"}}});
-document.getElementById("test").textContent="cache="+xhr.cache;
- document.getElementById("test1").textContent="context="+xhr.context;
-document.getElementById("test2").textContent="credentials="+xhr.credentials;
-document.getElementById("test3").textContent="destination="+xhr.destination;
+document.getElementById("test").textContent="ok="+xhr.ok;
+ document.getElementById("test1").textContent="redirected="+xhr.redirected;
+document.getElementById("test2").textContent="status="+xhr.status;
+document.getElementById("test3").textContent="statusText="+xhr.statusText;
 document.getElementById("test4").textContent="headers="+xhr.headers;
-document.getElementById("test5").textContent="integrity="+xhr.integrity;
-document.getElementById("test6").textContent="method="+xhr.method;
-document.getElementById("test7").textContent="mode="+xhr.mode;
-document.getElementById("test8").textContent="redirect="+xhr.redirect;
-document.getElementById("test9").textContent="referrer="+xhr.referrer;
-document.getElementById("test10").textContent="url="+xhr.url;
+document.getElementById("test5").textContent="type="+xhr.type;
+document.getElementById("test6").textContent="url="+xhr.url;
+document.getElementById("test7").textContent="useFinalURL="+xhr.useFinalURL;
+//document.getElementById("test8").textContent="redirect="+xhr.redirect;
+//document.getElementById("test9").textContent="referrer="+xhr.referrer;
+//document.getElementById("test10").textContent="url="+xhr.url;
 document.getElementById("test11").textContent="body="+xhr.body;
-document.getElementById("test13").textContent="bodyUsed="+xhr.bodyUsed;
-   </script>  
+//document.getElementById("test13").textContent="bodyUsed="+xhr.bodyUsed;
+  
+</script>  
  
 </body>
 </html>
