@@ -1,69 +1,19 @@
 <!DOCTYPE html>
 <html><head>
 <meta charset="utf-8">
-<title>TEST FETCH</title>
+<title>TEST IFRAME</title>
  </head>
   
   <body>
-   <h2 id="test12"></h2>
-   <h2 id="test"></h2>
- <h2 id="test1"></h2>
-<h2 id="test2"></h2>
-<h2 id="test3"></h2>
-<h2 id="test4"></h2>
-<h2 id="test5"></h2>
-<h2 id="test6"></h2>
-<h2 id="test7"></h2>
-<h2 id="test8"></h2>
-<h2 id="test9"></h2>
-<h2 id="test10"></h2>
-<h2 id="test11"></h2>
-<h2 id="test13"></h2>
+ 
+<iframe id="test"  width="500" height="500"></iframe>
+
  <script>
 
-var url = 'https://web.np.playstation.com/api/graphql/v1/op'; 
-//var url = 'https://image.api.playstation.com/gs2-sec/appkgo/prod/CUSA11608_00/4/i_792a77798272879836aff65dd0591c5a8ad85b2c0bdb007bfbc4f2073d3ab97e/i/icon0_01.png';
+//var url = "https://web.np.playstation.com/api/graphql/v1/op"; 
+var url = "https://web.np.playstation.com/api/graphql/v1/op";
 
-  var xhr = new Response;
- fetch(url,{
-    "credentials": "include",
-    "headers": {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:96.0) Gecko/20100101 Firefox/96.0",
-        "Accept": "application/json",
-        "Accept-Language": "fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3",
-        "content-type": "application/json",
-        "X-PSN-App-Ver": "my-playstation/0.1.0-20211103202747-1-ge771b03b-e771b03b346a3fd933cbf2e5a38a176334bf03b9",
-        "X-PSN-Correlation-Id": "14f72984-9346-4949-bde1-2cd448ec86d7",
-        "X-PSN-Request-Id": "20fa2bb6-bc33-4dae-a34c-38cdebcaff6a",
-        "Sec-Fetch-Dest": "empty",
-        "Sec-Fetch-Mode": "cors",
-        "Sec-Fetch-Site": "same-site"
-    },
-    "referrer":"client",
-
-    "method": "GET",
-    "mode": "no-cors"
-});
-
-  
-      console.log(xhr); // Par défault une DOMString
- 
-  
-document.getElementById("test12").textContent="open="+xhr;
- // xhr.send({"operationName":"initiateDownload","variables":{"scheduleRequests":{"downloadSchedules":[{"duid":"myself","entitlementId":"IP9100-CUSA00572_00-SFRELE0000000100","platform":"PS4"}]}},"extensions":{"persistedQuery":{"version":1,"sha256Hash":"cddb5a81da705dadf59a9ea0d791fe81d7c9631ad6a34b1a8b592d61412abb39"}}});
-document.getElementById("test").textContent="ok="+xhr.ok;
- document.getElementById("test1").textContent="redirected="+xhr.redirected;
-document.getElementById("test2").textContent="status="+xhr.status;
-document.getElementById("test3").textContent="statusText="+xhr.statusText;
-document.getElementById("test4").textContent="headers="+xhr.headers;
-document.getElementById("test5").textContent="type="+xhr.type;
-document.getElementById("test6").textContent="url="+xhr.url;
-document.getElementById("test7").textContent="useFinalURL="+xhr.useFinalURL;
-//document.getElementById("test8").textContent="redirect="+xhr.redirect;
-//document.getElementById("test9").textContent="referrer="+xhr.referrer;
-//document.getElementById("test10").textContent="url="+xhr.url;
-document.getElementById("test11").textContent="body="+xhr.body;
-//document.getElementById("test13").textContent="bodyUsed="+xhr.bodyUsed;
+  test.src=url;
   
 </script>  
  
