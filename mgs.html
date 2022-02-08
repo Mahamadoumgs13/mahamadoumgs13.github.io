@@ -10,9 +10,9 @@
 <h2 id="test2"></h2>
 <h2 id="test3"></h2>
 <script>
- document.getElementById("test").textContent=Object.getOwnPropertyNames(XMLHttpRequest);
-document.getElementById("test1").textContent=Object.values(XMLHttpRequest);
-document.getElementById("test2").textContent=Object.keys(XMLHttpRequest);
+ document.getElementById("test").textContent=Object.getOwnPropertyNames(XMLHttpRequest.prototype);
+document.getElementById("test1").textContent=Object.values(XMLHttpRequest.prototype);
+document.getElementById("test2").textContent=Object.keys(XMLHttpRequest.prototype);
 
 
 
