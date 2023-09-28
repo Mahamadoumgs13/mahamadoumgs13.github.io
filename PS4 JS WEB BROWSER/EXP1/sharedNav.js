@@ -1,1 +1,0 @@
-sharedNav.setPublicUrl('/static/lib/shared-nav/2.2.4/');
